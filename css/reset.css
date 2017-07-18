@@ -1,0 +1,185 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-size: 16px;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* custom */
+a {
+  color: #7e8c8d;
+  text-decoration: none;
+  -webkit-backface-visibility: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+
+
+
+html, body {
+  width: 100%;
+  font-family: sans-serif,"宋体";
+
+}
+
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.border-top-1{
+  background-image:linear-gradient(180deg, #ccc, #ccc 50%, transparent 50%);
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position:top;
+}
+.border-bottom-1{
+  background-image:linear-gradient(180deg, #ccc, #ccc 50%, transparent 50%);
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position:bottom;
+}
+
+/*修改mint-ui默认样式*/
+.mint-header-title{
+  font-weight: 600;
+  line-height: .32rem;
+}
+
+.mint-header{
+  background:-webkit-gradient(linear, 0 0, right 0, from(#16a2e3), to(#0f5bf5));
+}
+
+/**路由时候渐入渐出**/
+.slide-enter-active {
+  transition: all .2s linear;
+  height:100%;
+}
+/*.slide-leave-active {
+  transition: all .2s linear;
+  height:100%;
+}*/
+.slide-enter, .slide-leave-active {
+  transform: translateX(100%);
+  opacity: 0;
+}
+.mint-header{
+  height: 60px !important;
+  padding-top: 20px !important;
+}
+.mint-toast{
+  z-index: 3000 !important;
+}
+[type="button"]{
+  outline: none;
+}
+.hdBody{
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+}
+.j_loadmore{
+  min-height: calc(100vh - 60px);
+}
+input[disabled]{
+  background-color: #fff;
+}
+.red-point{
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 5px;
+  width: 0.12rem;
+  height: 0.12rem;
+  border-radius: 0.06rem;
+  background-color: red;
+}
+.send-btn {
+  position: fixed;
+  bottom:0;
+  left: 0;
+  right:0;
+  width:100%;
+}
+.send-btn .mint-button {
+  border-radius: 0;
+  font-size:16px;
+}
+.select-show{
+  padding-right: 6px;
+}
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 10px solid #888;
+}
+
